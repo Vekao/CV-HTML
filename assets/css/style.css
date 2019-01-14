@@ -1,0 +1,388 @@
+@import url("tablette.css");
+@import url("phone.css");
+
+
+/* TYPO */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue Thin.otf');
+    src: url('../fonts/BebasNeue Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue Light.otf');
+    src: url('../fonts/BebasNeue Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue Regular.otf');
+    src: url('../fonts/BebasNeue Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue Book';
+    src: url('../fonts/BebasNeue Book.otf');
+    src: url('../fonts/BebasNeue Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue Bold.otf');
+    src: url('../fonts/BebasNeue Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*version ecran ordi*/
+@media screen and (min-width: 1024px) {
+    #container {
+        display: flex;
+        justify-content: center;
+        width: 1240px;
+        height: 1754px;
+        margin: 20px auto;
+        box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* PARTIE CONTACT */
+    .aside {
+        width: 400px;
+        background: #1e2126;
+        color: white;
+        min-width: 300px;
+    }
+
+    .photo {
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        margin-left: calc(50% - 90px);
+        margin-top: 10%;
+    }
+
+    h1 {
+        font-size: 93.75px;
+        text-align: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: bold;
+        letter-spacing: -0.85px;
+        line-height: 0.85em;
+        margin: 20px 0;
+    }
+
+    .nom {
+        text-align: center;
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: bold;
+        line-height: 0.85em;
+        margin: 20px 0;
+        letter-spacing: 0.025em;
+    }
+
+    .metier {
+        text-align: center;
+        font-family: 'calibri', sans-serif;
+        font-size: 29px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: -0.025em;
+
+    }
+
+    .titreAside {
+        color: white;
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: normal;
+        letter-spacing: 12px;
+        margin-top: 120px;
+        margin-left: 35px;
+        font-size: 43px;
+    }
+
+    .barreAside {
+        margin-left: 35px;
+        height: 3px;
+        color: white;
+        background-color: white;
+        margin-top: 3px;
+
+    }
+
+    /*  PARTIE CONTACT : contact */
+    .logoAdresse {
+        position: absolute;
+        margin-left: 35px;
+        margin-top: 27px;
+    }
+
+    address {
+        font-family: 'Roboto', sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        margin-left: 80px;
+        margin-top: 20px;
+    }
+
+    .logoPhone {
+        position: absolute;
+        margin-left: 35px;
+        margin-top: 27px;
+    }
+
+    .telephone {
+        font-family: 'Roboto', sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        margin-left: 80px;
+        margin-top: 20px;
+        list-style: none;
+    }
+
+    .logoMail {
+        position: absolute;
+        margin-left: 35px;
+        margin-top: 20px;
+    }
+
+    .mail {
+        font-family: 'Roboto', sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        margin-left: 80px;
+        margin-top: 25px;
+    }
+
+    .logoLinkedin {
+        position: absolute;
+        margin-left: 35px;
+        margin-top: 25px;
+    }
+
+    .linkedin {
+        font-family: 'Roboto', sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: gray;
+    }
+
+    /* PARTIE CONTACT : compétences */
+    .listeCompetence {
+        font-family: 'Roboto', sans-serif;
+        font-size: 23px;
+        margin-left: 60px;
+        list-style-image: url("../image/triangle.png");
+        margin-top: 25px;
+    }
+
+    .etre {
+        font-family: 'Roboto', sans-serif;
+        font-size: 23px;
+        margin-left: 32px;
+        list-style: none;
+        margin-top: 45px;
+    }
+
+
+
+    /* PARTIE CV */
+    .cv {
+        width: 840px;
+        padding-right: 57px;
+    }
+
+    .cv li {
+        list-style: none;
+    }
+
+    .cv ul {
+        margin: 5px 0px 15px 180px;
+        line-height: 1.1;
+    }
+
+    .titreCv {
+        font-family: 'Bebas Neue', sans-serif;
+        font-weight: bold;
+        font-size: 46px;
+        text-transform: uppercase;
+        color: #1e2126;
+        letter-spacing: 1px;
+        margin-left: 150px;
+        margin-top: 30px;
+    }
+
+    .barreCv {
+        margin-left: 150px;
+        height: 3px;
+        color: #1e2126;
+        background-color: #1e2126;
+    }
+
+    .date {
+        font-size: 17px;
+        color: #777777;
+    }
+
+    .emploi {
+        font-size: 21px;
+        color: #1e2126;
+        font-weight: bold;
+    }
+
+    .lienBlog {
+        color: #1e2126;
+    }
+
+    .employeur {
+        font-size: 17px;
+        color: #777777;
+        font-weight: bold;
+    }
+
+    .fonction {
+        color: #242a30;
+        margin-left: 20px;
+    }
+
+    .categorie {
+        color: #242a30;
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-left: 150px;
+        margin-top: 20px;
+        margin-bottom: -5px;
+    }
+
+    .logoExperience {
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        background-color: #242a30;
+        margin-left: 44px;
+        margin-top: -6px;
+        position: absolute;
+    }
+
+    .imageExperience {
+        width: 45px;
+        height: 45px;
+        margin-left: 54px;
+        margin-top: 2px;
+        position: absolute;
+    }
+
+    .logoDivers {
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        background-color: #242a30;
+        margin-left: 44px;
+        margin-top: -5px;
+        position: absolute;
+    }
+
+    .imageDivers {
+        margin-left: 58px;
+        margin-top: 12px;
+        position: absolute;
+    }
+
+    .logoFormation {
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        background-color: #242a30;
+        margin-left: 44px;
+        margin-top: -5px;
+        position: absolute;
+    }
+
+    .imageFormation {
+        margin-left: 51px;
+        margin-top: 9px;
+        position: absolute;
+    }
+
+    .logoInteret {
+        width: 66px;
+        height: 66px;
+        border-radius: 50%;
+        background-color: #242a30;
+        margin-left: 44px;
+        margin-top: -5px;
+        position: absolute;
+    }
+
+    .logoCoeur {
+        margin-left: 56px;
+        margin-top: 9px;
+        position: absolute;
+        height: 42px;
+    }
+
+    .formation {
+        font-family: 'Roboto', sans-serif;
+        font-size: 19px;
+        font-weight: bold;
+        color: #1e2126;
+    }
+
+    .ecole {
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        font-weight: 500;
+        color: #777777;
+    }
+
+    .conteneurImage {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left: 37px;
+    }
+
+    .conteneurImage img {
+        height: 140px;
+    }
+
+    /* .legende {
+        display: none;
+        padding: 5px;
+        font-size: 14px;
+        text-align: center;
+        width: 144px;
+    } 
+
+    .imageInteret:hover .legende {
+        display: flex;
+    }*/
+}

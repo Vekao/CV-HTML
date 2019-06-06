@@ -65,17 +65,9 @@
     /* PARTIE CONTACT */
     .aside {
         width: 400px;
-        background: #1e2126;
+        background: #242a30;
         color: white;
         min-width: 300px;
-    }
-
-    .photo {
-        height: 180px;
-        width: 180px;
-        border-radius: 50%;
-        margin-left: calc(50% - 90px);
-        margin-top: 10%;
     }
 
     h1 {
@@ -86,6 +78,7 @@
         letter-spacing: -0.85px;
         line-height: 0.85em;
         margin: 20px 0;
+        margin-top: 120px;
     }
 
     .nom {
@@ -104,7 +97,6 @@
         font-style: normal;
         font-weight: 400;
         letter-spacing: -0.025em;
-
     }
 
     .titreAside {
@@ -123,7 +115,6 @@
         color: white;
         background-color: white;
         margin-top: 3px;
-
     }
 
     /*  PARTIE CONTACT : contact */
@@ -144,7 +135,7 @@
     .logoPhone {
         position: absolute;
         margin-left: 35px;
-        margin-top: 27px;
+        margin-top: 14px;
     }
 
     .telephone {
@@ -184,6 +175,20 @@
         margin-top: 30px;
     }
 
+    .logoGithub {
+        position: absolute;
+        margin-left: 35px;
+        margin-top: 25px;
+    }
+
+    .github {
+        font-family: 'Roboto', sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+
     a {
         color: white;
         text-decoration: none;
@@ -200,6 +205,7 @@
         margin-left: 60px;
         list-style-image: url("../image/triangle.png");
         margin-top: 25px;
+        color: white;
     }
 
     .etre {
@@ -208,6 +214,7 @@
         margin-left: 32px;
         list-style: none;
         margin-top: 45px;
+        color: white;
     }
 
 
@@ -216,6 +223,7 @@
     .cv {
         width: 840px;
         padding-right: 57px;
+        color: #242a30;
     }
 
     .cv li {
@@ -223,7 +231,7 @@
     }
 
     .cv ul {
-        margin: 5px 0px 15px 180px;
+        margin: 5px 0px 10px 170px;
         line-height: 1.1;
     }
 
@@ -232,40 +240,47 @@
         font-weight: bold;
         font-size: 46px;
         text-transform: uppercase;
-        color: #1e2126;
+        color: #242a30;
         letter-spacing: 1px;
         margin-left: 150px;
-        margin-top: 30px;
+        margin-top: 60px;
     }
 
     .barreCv {
         margin-left: 150px;
         height: 3px;
-        color: #1e2126;
-        background-color: #1e2126;
+        margin-bottom: 20px;
+        color: #242a30;
+        background-color: #242a30;
     }
 
     .date {
         font-size: 17px;
         color: #777777;
+        font-weight: 400;
     }
 
     .emploi {
         font-size: 21px;
-        color: #1e2126;
         font-weight: bold;
     }
 
     .lienBlog {
-        color: #1e2126;
+        color: #242a30;
     }
 
     .employeur {
-        font-size: 17px;
-        color: #777777;
-        font-weight: bold;
+        font-size: 17px; 
+        color: #00adef;
+        font-weight: 500;
+        text-transform: uppercase;
     }
 
+    
+    .ville {
+        text-transform: none;
+    }
+    
     .fonction {
         color: #242a30;
         margin-left: 20px;
@@ -278,8 +293,10 @@
         text-transform: uppercase;
         font-weight: bold;
         margin-left: 150px;
-        margin-top: 20px;
-        margin-bottom: -5px;
+    }
+
+    .espace {
+        margin-top: 35px;
     }
 
     .logoExperience {
@@ -353,14 +370,14 @@
         font-family: 'Roboto', sans-serif;
         font-size: 19px;
         font-weight: bold;
-        color: #1e2126;
+        color: #00adef;
     }
 
     .ecole {
         font-family: 'Roboto', sans-serif;
         font-size: 17px;
-        font-weight: 500;
-        color: #777777;
+        font-weight: bold;
+        color: #242a30;
     }
 
     .conteneurImage {
@@ -373,16 +390,4 @@
     .conteneurImage img {
         height: 140px;
     }
-
-    /* .legende {
-        display: none;
-        padding: 5px;
-        font-size: 14px;
-        text-align: center;
-        width: 144px;
-    } 
-
-    .imageInteret:hover .legende {
-        display: flex;
-    }*/
 }

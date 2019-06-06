@@ -11,7 +11,7 @@
     .aside {
         width: 100%;
         height: 990px;
-        background: #1e2126;
+        background: #242a30;
         color: white;
         margin-bottom: 15px;
     }
@@ -92,9 +92,9 @@
     }
 
     .logoPhone {
-        position: absolute;
+        position: absolute;        
         margin-left: 35px;
-        margin-top: 27px;
+        margin-top: 14px;
     }
 
     .telephone {
@@ -127,6 +127,20 @@
     }
 
     .linkedin {
+        font-family: 'Roboto', sans-serif;
+        font-size: 19px;
+        font-style: normal;
+        margin-left: 80px;
+        margin-top: 30px;
+    }
+
+    .logoGithub {
+        position: absolute;
+        margin-left: 35px;
+        margin-top: 25px;
+    }
+
+    .github{
         font-family: 'Roboto', sans-serif;
         font-size: 19px;
         font-style: normal;
@@ -178,7 +192,7 @@
         font-weight: bold;
         font-size: 35px;
         text-transform: uppercase;
-        color: #1e2126;
+        color: #242a30;
         letter-spacing: 1px;
         margin-top: 15px;
         padding: 0 20px;
@@ -187,8 +201,8 @@
     .barreCv {
         margin-left: 20px;
         height: 3px;
-        color: #1e2126;
-        background-color: #1e2126;
+        color: #242a30;
+        background-color: #242a30;
     }
 
     .date {
@@ -198,12 +212,12 @@
 
     .emploi {
         font-size: 19px;
-        color: #1e2126;
+        color: #242a30;
         font-weight: bold;
     }
 
     .lienBlog {
-        color: #1e2126;
+        color: #242a30;
     }
 
     .employeur {
@@ -236,7 +250,7 @@
         font-family: 'Roboto', sans-serif;
         font-size: 19px;
         font-weight: bold;
-        color: #1e2126;
+        color: #242a30;
     }
 
     .ecole {

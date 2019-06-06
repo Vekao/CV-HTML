@@ -1,25 +1,71 @@
-/*version tablette*/
+/* version print */
 
-@media screen and (min-width: 481px) and (max-width: 1023px) {
+@media print {
+    @page {
+        margin: 0cm;
+    }
 
-    /* PARTIE CONTACT */
-    .aside {
-        width: 100%;
-        height: 1150px;
-        background: #242a30;
-        color: white;
-        margin-bottom: 30px;
+    /* TYPO */
+    @font-face {
+        font-family: 'Bebas Neue';
+        src: url('../fonts/BebasNeue Thin.otf');
+        src: url('../fonts/BebasNeue Thin.ttf') format('truetype');
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Bebas Neue';
+        src: url('../fonts/BebasNeue Light.otf');
+        src: url('../fonts/BebasNeue Light.ttf') format('truetype');
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Bebas Neue';
+        src: url('../fonts/BebasNeue Regular.otf');
+        src: url('../fonts/BebasNeue Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Bebas Neue Book';
+        src: url('../fonts/BebasNeue Book.otf');
+        src: url('../fonts/BebasNeue Book.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'Bebas Neue';
+        src: url('../fonts/BebasNeue Bold.otf');
+        src: url('../fonts/BebasNeue Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
     }
 
     #container {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        width: 100%;
+        width: 1240px;
+        height: 1754px;
     }
 
-    .photo {
-        display: none;
+    /* PARTIE CONTACT */
+    .aside {
+        width: 400px;
+        background: #242a30;
+        color: white;
     }
 
     h1 {
@@ -29,19 +75,17 @@
         font-weight: bold;
         letter-spacing: -0.85px;
         line-height: 0.85em;
-        margin-top: 40px;
-    }
-
-    h1 br {
-        display: none;
+        /* margin: 20px 0; */
+        margin-top: 100px;
     }
 
     .nom {
+        text-align: center;
         font-family: 'Bebas Neue', sans-serif;
         font-weight: bold;
         line-height: 0.85em;
+        margin: 20px 0;
         letter-spacing: 0.025em;
-        margin-left: 25px;
     }
 
     .metier {
@@ -59,7 +103,7 @@
         font-family: 'Bebas Neue', sans-serif;
         font-weight: normal;
         letter-spacing: 12px;
-        margin-top: 45px;
+        margin-top: 120px;
         margin-left: 35px;
         font-size: 43px;
     }
@@ -136,9 +180,9 @@
         margin-top: 25px;
     }
 
-    .github{
+    .github {
         font-family: 'Roboto', sans-serif;
-        font-size: 19px;
+        font-size: 21px;
         font-style: normal;
         margin-left: 80px;
         margin-top: 30px;
@@ -160,6 +204,7 @@
         margin-left: 60px;
         list-style-image: url("../image/triangle.png");
         margin-top: 25px;
+        color: white;
     }
 
     .etre {
@@ -168,18 +213,26 @@
         margin-left: 32px;
         list-style: none;
         margin-top: 45px;
+        color: white;
     }
 
 
+
     /* PARTIE CV */
+    .cv {
+        width: 840px;
+        padding-right: 57px;
+        color: #242a30;
+        margin-top: 20px;
+    }
+
     .cv li {
         list-style: none;
     }
 
     .cv ul {
-        margin: 5px 0px 15px 180px;
+        margin: 5px 0px 10px 170px;
         line-height: 1.1;
-        padding-right: 20px;
     }
 
     .titreCv {
@@ -190,12 +243,13 @@
         color: #242a30;
         letter-spacing: 1px;
         margin-left: 150px;
-        margin-top: 30px;
+        margin-top: 45px;
     }
 
     .barreCv {
         margin-left: 150px;
         height: 3px;
+        margin-bottom: 20px;
         color: #242a30;
         background-color: #242a30;
     }
@@ -203,11 +257,11 @@
     .date {
         font-size: 17px;
         color: #777777;
+        font-weight: 400;
     }
 
     .emploi {
         font-size: 21px;
-        color: #242a30;
         font-weight: bold;
     }
 
@@ -217,8 +271,14 @@
 
     .employeur {
         font-size: 17px;
-        color: #777777;
-        font-weight: bold;
+        color: #00adef;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+
+    .ville {
+        text-transform: none;
     }
 
     .fonction {
@@ -233,8 +293,10 @@
         text-transform: uppercase;
         font-weight: bold;
         margin-left: 150px;
-        margin-top: 20px;
-        margin-bottom: -5px;
+    }
+
+    .espace {
+        margin-top: 35px;
     }
 
     .logoExperience {
@@ -308,24 +370,22 @@
         font-family: 'Roboto', sans-serif;
         font-size: 19px;
         font-weight: bold;
-        color: #242a30;
+        color: #00adef;
     }
 
     .ecole {
         font-family: 'Roboto', sans-serif;
         font-size: 17px;
-        font-weight: 500;
-        color: #777777;
+        font-weight: bold;
+        color: #242a30;
     }
 
     .conteneurImage {
         display: flex;
         justify-content: center;
-        margin-top: 30px;
-        margin-bottom: 40px;
-        flex-wrap: wrap;
+        margin-top: 10px;
+        margin-left: 37px;
     }
-
 
     .conteneurImage img {
         height: 140px;

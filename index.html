@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen"> 
+    <link rel="stylesheet" type="text/css" href="assets/css/print.css" media="print">
     <title>Cv de Virginie Kernel</title>
 </head>
 
@@ -14,11 +15,8 @@
     <div id="container">
         <div class="aside">
             <section id="portrait">
-                <figure>
-                    <img src="assets/image/photo.jpg" alt="Photo du CV" class="photo" />
-                </figure>
                 <h1>VIRGINIE<br><span class="nom">KERNEL</span></h1>
-                <h2 class="metier">Développeuse Web Java junior</h2>
+                <h2 class="metier">Développeuse Web junior</h2>
             </section>
 
             <section id="contact">
@@ -28,37 +26,47 @@
                     <img src="assets/image/adresse.png" alt="logo adresse" class="logoAdresse">
                 </div>
                 <address>26 Av du Général Pierre Billotte<br>94000 Créteil</address>
+
                 <div>
                     <img src="assets/image/phone.png" alt="logo téléphone" class="logoPhone">
                 </div>
                 <ul class="telephone">
                     <li>06 75 44 23 36</li>
-                    <li>01 49 80 53 45</li>
                 </ul>
+
                 <div>
                     <img src="assets/image/mail.png" alt="logo mail" class="logoMail">
                 </div>
                 <p class="mail">virginie.kernel@gmail.com</p>
+
                 <div>
                     <img src="assets/image/linkedin.png" alt="logo linkedin" class="logoLinkedin">
                 </div>
                 <p class="linkedin"><a href="https://linkedin.com/in/virginie-kernel" target="_blank">linkedin.com/in/virginie-kernel</a></p>
+                
+                <div>
+                    <img src="assets/image/github.png" alt="logo github" class="logoGithub">
+                </div>
+                <p class="github"><a href="https://github.com/Vekao" target="_blank">github.com/Vekao</a></p>
             </section>
 
             <section id="competences">
                 <h3 class="titreAside">Compétences</h3>
                 <hr class="barreAside">
                 <ul class="listeCompetence">
-                    <li>HTML5</li>
-                    <li>CSS3</li>
+                    <li>HTML / CSS</li>
                     <li>JavaScript</li>
                     <li>Java</li>
+                    <li>MySQL</li>
+                </ul>
+                <ul class="listeCompetence">
+                    <li>Vue.js</li>
+                    <li>Spring boot</li>
                 </ul>
                 <ul class="listeCompetence">
                     <li>Photoshop</li>
-                    <li>After Effects</li>
                     <li>Illustrator</li>
-                    <li>Word / Exel / Power Point</li>
+                    <li>Adobe XD</li>
                 </ul>  
                 <ul class="listeCompetence">
                     <li>Anglais : intermédiaire</li>
@@ -82,60 +90,55 @@
                 <div class="ligneVerticale"></div>
                 <h3 class="titreCv">Expériences professionnelles</h3>
                 <hr class="barreCv">
-                <p class="categorie">INFOGRAPHISTE : </p>
 
+                <h4 class="categorie">Développeuse Web : </h4>
                 <ul>
-                    <li class="date">septembre 2008 - juillet 2009</li>
-                    <li class="emploi">Infographiste 3D <span class="employeur">BUF COMPAGNIE / Paris</span></li>
-                    <li class="fonction">- Modélisation / textures et shaders de véhicules et d’éléments de décor sur 2
-                        films d'animation</li>
+                    <li class="emploi">stage : Développeuse Web Front<span class="date"> / février 2019</span></li>
+                    <li class="employeur">Matrimonline / <span class="ville">Aulnay-Sous-Bois</span></li>
+                    <li class="fonction">- Réalisation de maquettes de pages internet et d'articles de Blog </li>
+                    <li class="fonction">- Intégration des maquettes sur le CMS Wordpress </li>
+                    <li class="fonction">- Découverte de la méthode Agile </li>
+                </ul>
+                <h4 class="categorie espace">INFOGRAPHISTE : </h4>
+                <ul>                    
+                    <li class="emploi">Infographiste 3D<span class="date"> / septembre 2008 - juillet 2009</span></li>
+                    <li class="employeur">BUF COMPAGNIE<span class="ville"> / Paris</span></li>
+                    <li class="fonction">- Modélisation / textures et shaders de véhicules et d’éléments de décors sur 2<br>
+                    films d'animation</li>
                 </ul>
 
                 <ul>
-                    <li class="date">avril - mai 2008</li>
-                    <li class="emploi">Infographiste 3D <span class="employeur">TKM PRODUCTION / Paris</span></li>
-                    <li class="fonction">- Réalisation d’un habillage télévisuel pour une websérie</li>
-                </ul>
-
-                <ul>
-                    <li class="date">octobre 2007</li>
-                    <li class="emploi">Infographiste 3D</li>
-                    <li class="fonction">- Réalisation des effets visuels sur un clip amateur</li>
-                </ul>
-
-                <ul>
-                    <li class="date">mai - juin 2005</li>
-                    <li class="emploi">stage : Infographiste 2D <span class="employeur">COMPTOIR DES LANGUES / Paris</span></li>
+                    <li class="emploi">stage : Infographiste 2D<span class="date"> / mai - juin 2005</span></li>
+                    <li class="employeur">COMPTOIR DES LANGUES<span class="ville"> / Paris</span></li>
                     <li class="fonction">- Mise en page d’un livre de formation d’anglais</li>
                     <li class="fonction">- Animation d’éléments graphiques avec le logiciel Flash</li>
                 </ul>
 
 
-                <p class="categorie">VENDEUSE ET EMPLOYÉE POLYVALENTE : </p>
+                <h4 class="categorie espace">Autres expériences : </h4>
                 <ul>
-                    <li class="date">juin 2017</li>
-                    <li class="emploi">Vendeuse <span class="employeur">DU PAREIL AU MÊME Temple / Paris</span></li>
+                    <li class="emploi">Vendeuse<span class="date"> / juin 2017</span></li>
+                    <li class="employeur">DU PAREIL AU MÊME Temple<span class="ville"> / Paris</span></li>
                 </ul>
 
                 <ul>
-                    <li class="date">mars 2013 - janvier 2016</li>
-                    <li class="emploi">Fabrication et vente en ligne de créations fait-main</li>
-                    <li class="employeur">Autoentrepreneur / Créteil (94)</li>
+                    <li class="emploi">Autoentrepreneur<span class="date"> / mars 2013 - janvier 2016</span></li>
+                    <li class="employeur">Fabrication et vente en ligne de créations fait-main<span class="ville"> / Créteil (94)</span></li>
                 </ul>
 
                 <ul>
-                    <li class="date">octobre 2014 - novembre 2015</li>
-                    <li class="emploi">Vendeuse en boulangerie <span class="employeur">MAISON BOYÈRE / Créteil (94)</span></li>
+                    <li class="emploi">Vendeuse en boulangerie<span class="date"> / octobre 2014 - novembre 2015</span></li>
+                    <li class="employeur">MAISON BOYÈRE<span class="ville"> / Créteil (94)</span></li>
                 </ul>
 
                 <ul>
-                    <li class="date">juillet 2014 - août 2014</li>
-                    <li class="emploi">Employée polyvalente <span class="employeur">HÔTEL CASTEL GUY / Châtel-Guyon(63)</span></li>
+                    <li class="emploi">Employée polyvalente<span class="date"> / juillet 2014 - août 2014</span></li>
+                    <li class="employeur">HÔTEL CASTEL GUY<span class="ville"> / Châtel-Guyon(63)</span></li>
                 </ul>
 
                 <ul>
-                    <li class="date">mai 2007 - février 2008</li>
-                    <li class="emploi">Équipière polyvalente <span class="employeur">MC DONALD’s Rue de Rennes / Paris</span></li>
+                    <li class="emploi">Équipière polyvalente<span class="date"> / mai 2007 - février 2008</span></li>
+                    <li class="employeur">MC DONALD’s Rue de Rennes<span class="ville"> / Paris</span></li>
                 </ul>
 
             </section>
@@ -149,16 +152,13 @@
                 <hr class="barreCv">
 
                 <ul>
-                    <li class="date">2011 - 2018</li>
-                    <li class="emploi">Création d’un blog sur les loisirs créatifs : <a href="http://vekao.blogspot.com/"
-                            class="lienBlog" target="_blank">l'Atelier de Vekao</a></li>
+                    <li class="emploi">Création d’un blog sur les loisirs créatifs : <a href="http://vekao.blogspot.com/" class="lienBlog" target="_blank">l'Atelier de Vekao</a></li>
                     <li class="fonction">- Création du thème du blog en modifiant le code HTML</li>
                     <li class="fonction">- Création des éléments graphiques (bannières, illustrations...)</li>
                     <li class="fonction">- Rédaction des articles, prise et retouche des photographies</li>
                 </ul>
 
                 <ul>
-                    <li class="date">2015</li>
                     <li class="emploi">Création d’un portfolio en ligne</li>
                     <li class="fonction">- Création d’un site internet (avec HTML, CSS et PHP)</li>
                 </ul>
@@ -172,30 +172,26 @@
                 <h3 class="titreCv">Formation</h3>
                 <hr class="barreCv">
                 <ul>
-                    <li class="date">2018 - 2019</li>
+                    <li class="ecole">SIMPLON.CO - Sarcelles (93)<span class="date"> / 2018 - 2019</span></li>
                     <li class="formation">Formation de Développeur Web Java</li>
-                    <li class="ecole">Simplon.co / Sarcelles</li>
                 </ul>
 
                 <ul>
-                    <li class="date">2005 - 2007</li>
-                    <li class="formation">Formation aux métiers du film d’animation et de l’infographie 3D à
-                        SUP’Infograph</li>
-                    <li class="ecole">ESRA (École Supérieure de Réalisation Audiovisuelle) / Paris </li>
+                    <li class="ecole">ESRA (École Supérieure de Réalisation Audiovisuelle) section SUP’Infograph - Paris<span class="date"> / 2005 - 2007</span></li>
+                    <li class="formation">Formation aux métiers du film d’animation et de l’infographie 3D</li>
                 </ul>
 
                 <ul>
-                    <li class="date">2004</li>
-                    <li class="formation"> Formation en communication visuelle</li>
-                    <li class="ecole">École BRASSART / Tours (37)</li>
+                    <li class="ecole">École BRASSART - Tours (37)<span class="date"> / 2004</span></li>
+                    <li class="formation">Formation en communication visuelle</li>
                 </ul>
 
                 <ul>
-                    <li class="date">2002 - 2003</li>
+                    <li class="ecole">Lycée RABELAIS - Chinon (37)<span class="date"> / 2002 - 2003</span></li>
                     <li class="formation">BAC Technologie Action et Communication Commerciale</li>
-                    <li class="ecole">Lycée RABELAIS / Chinon (37)</li>
                 </ul>
             </section>
+
             <section id="interets">
                 <div class="logoInteret phoneImage"></div>
                 <div>
